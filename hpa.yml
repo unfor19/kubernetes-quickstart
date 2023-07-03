@@ -19,11 +19,11 @@ spec:
   # https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/#configurable-scaling-behavior
   behavior:
     scaleUp:
+      # https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/#stabilization-window
+      # When "0" - Disables the stabilization window.
+      # As a result, the HPA can initiate scaling actions immediately without waiting for any specific duration of stabilization.
       stabilizationWindowSeconds: 0
       policies:
-        - type: Percent
-          value: 100
-          periodSeconds: 15
         - type: Pods
           value: 2
           periodSeconds: 15
