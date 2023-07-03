@@ -1,0 +1,4 @@
+# Source - https://github.com/kubernetes-sigs/metrics-server/issues/196#issuecomment-451061841
+# Fixes failing health check - `x509: cannot validate certificate for 192.168.49.2 because it doesn't contain any IP SANs" node="minikue"`
+args:
+  - --kubelet-insecure-tls
