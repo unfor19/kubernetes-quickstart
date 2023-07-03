@@ -95,3 +95,11 @@
    - `-s` - Timeout in seconds, the default is 30 seconds
 
 4. View scaling up and down in LENS
+
+## Authors
+
+Created and maintained by [Meir Gabay](https://github.com/unfor19)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/unfor19/kubernetes-quickstart/blob/master/LICENSE) file for details
